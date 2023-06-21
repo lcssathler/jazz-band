@@ -1,0 +1,232 @@
+* {
+	font-family: "Roboto", Arial, sans-serif;
+	font-weight: bolder;
+	color: var(--color-black);
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-weight: 500;
+}
+
+:root {
+	--color-primary: #ed4d1b;
+	--color-seconday: #ff9a3c;
+	--color-black: #000;
+	--color-white: #fff;
+}
+
+body {
+	width: 100%;
+	height: 800px;
+	display: block;
+	padding: 0 1rem;
+	background: linear-gradient(90deg, #ffe7d1 0%, #fff2e6 100%);
+}
+
+header,
+.main-section,
+.courses-section,
+footer {
+	border: 1px solid var(--color-black);
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+}
+
+.header .logo-img {
+	display: block;
+}
+
+.link {
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1.2em;
+	color: var(--color-black);
+	margin: 15px;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	flex-grow: 0.3;
+	margin: 0px 5px;
+}
+
+.button {
+	min-width: 114px;
+	max-height: 38px;
+	text-align: center;
+	background-color: var(--color-primary);
+	font: normal bolder 0.8em "Roboto", Arial;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	border: 2px solid var(--color-black);
+	box-shadow: 4px 4px 0px var(--color-black);
+	white-space: nowrap;
+	letter-spacing: 1px;
+}
+
+.main-section {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-section .band-img {
+	position: relative;
+	width: 100%;
+}
+
+.main-section .get-started {
+	display: table;
+	width: 30%;
+	height: 100%;
+	padding-left: 50px;
+}
+
+.get-started h1 {
+	font-weight: 900;
+	font-size: 3.4em;
+	color: var(--color-black);
+	margin-bottom: 32px;
+}
+
+.get-started p {
+	line-height: 1.5em;
+	margin-bottom: 32px;
+}
+
+.get-started .arrow {
+	height: 40px;
+	position: relative;
+	display: block;
+	transform: rotate(10deg);
+	left: 35%;
+}
+
+.courses-section {
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.courses-section .card-section {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+}
+
+.courses-section .card-section .orange {
+	background-color: var(--color-primary);
+	bottom: 30px;
+}
+
+.courses-section .card-section .yellow {
+	background-color: var(--color-seconday);
+}
+
+.card {
+	display: table;
+	width: 272px;
+	height: 306px;
+	padding: 20px;
+	border-radius: 0%;
+	border: 2px solid var(--color-black);
+	box-shadow: 4px 4px 0px var(--color-black);
+}
+
+.card .top-card .card-icon {
+	width: 48px;
+	height: 48px;
+}
+
+.top-card {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	gap: 16px;
+}
+
+.top-card h1 {
+	font-size: 1.5em;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+
+.card .arrow-right {
+	height: 60px;
+	position: relative;
+	left: 75%;
+}
+
+.courses-section aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; margin: 80px 30px;
+}
+
+.courses-section aside p {
+	font-size: 4em;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .logo-description {
+	display: table;
+	width: 25%;
+	margin: 60px 110px;
+	text-align: justify;
+
+}
+
+/* utilitary properties */
+
+.text-contrast {
+	color: var(--color-primary);
+}
+
+.margin-20 {
+	margin-bottom: 20px;
+}
+
+footer .navbar {
+	flex-direction: column;
+	gap: 22px;
+}
+
+.navbar .link {
+	margin: 0;
+
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+form .msg {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+form .email-box {
+	height: 48px;
+
+}
