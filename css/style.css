@@ -39,25 +39,30 @@ footer {
 	justify-content: space-around;
 	align-items: center;
 	padding: 20px;
+	gap: 20px;
 }
 
 .header .logo-img {
 	display: block;
 }
 
-.link {
+.header .navbar {
+	display: flex;
+	width: 60%;
+	min-width: 330px;
+	align-items: center;
+	flex-grow: 0.2;
+	margin: 0px 5px;
+	padding: 0px 40px;
+}
+
+.header .navbar .link {
 	text-decoration: none;
+	width: auto;
 	font-weight: 600;
 	font-size: 1.2em;
 	color: var(--color-black);
-	margin: 15px;
-}
-
-.navbar {
-	display: flex;
-	align-items: center;
-	flex-grow: 0.3;
-	margin: 0px 5px;
+	padding: 0 10px;
 }
 
 .button {
@@ -88,9 +93,11 @@ footer {
 
 .main-section .get-started {
 	display: table;
-	width: 30%;
+	width: 100%;
+	max-height: 60%;
 	height: 100%;
-	padding-left: 50px;
+	padding-left: 24px;
+	padding-bottom: 20px;
 }
 
 .get-started h1 {
@@ -109,7 +116,7 @@ footer {
 	height: 40px;
 	position: relative;
 	display: block;
-	transform: rotate(10deg);
+	transform: rotate(-1deg);
 	left: 35%;
 }
 
@@ -124,7 +131,9 @@ footer {
 .courses-section .card-section {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: 16px;
+	width: 100%;
 }
 
 .courses-section .card-section .orange {
@@ -174,25 +183,80 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center; margin: 80px 30px;
+	align-items: center;
+	margin: auto;
+	margin: 40px 0px;
 }
 
 .courses-section aside p {
+	display: inline-block;
+	white-space: nowrap;
 	font-size: 4em;
+	text-align: center;
 }
 
-footer {
+.footer-section {
+	padding: 1em 1.5em;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 }
 
-footer .logo-description {
-	display: table;
-	width: 25%;
-	margin: 60px 110px;
-	text-align: justify;
+.footer-section .logo-description {
+	width: 240px;
+}
 
+.footer-section .navbar {
+	display: block;
+	padding: 0;
+}
+
+.footer-section .navbar .link {
+	display: block;
+	color: var(--color-black);
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 20px;
+	margin: 20px 40px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+form .email-box {
+	height: 48px;
+	margin: 32px 0;
+	border: 2px solid var(--color-black);
+	box-shadow: 4px 4px 0px var(--color-black);
+}
+
+form .button {
+	width: fit-content;
+}
+
+@media only screen and (max-width: 768px) {
+	.header {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header .navbar {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header .navbar .link{
+		text-align: center;
+		flex-basis: 40%;
+		max-width: 120px;
+	}
+
+	.main-section {
+		flex-direction: column;
+	}
 }
 
 /* utilitary properties */
@@ -205,28 +269,6 @@ footer .logo-description {
 	margin-bottom: 20px;
 }
 
-footer .navbar {
-	flex-direction: column;
-	gap: 22px;
-}
-
-.navbar .link {
-	margin: 0;
-
-}
-
-form {
-	display: flex;
-	flex-direction: column;
-	gap: 32px;
-}
-
-form .msg {
+.font-24 {
 	font-size: 24px;
-	font-weight: 600;
-}
-
-form .email-box {
-	height: 48px;
-
 }
